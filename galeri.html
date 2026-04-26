@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galeri – MAPALA RIMBA NUSANTARA</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.svg" alt="Logo" class="logo-img" />
+      <div class="logo-text">
+        <span class="logo-main">MAPALA</span>
+        <span class="logo-sub">RIMBA NUSANTARA</span>
+      </div>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html" class="nav-link">Beranda</a></li>
+      <li><a href="tentang.html" class="nav-link">Tentang</a></li>
+      <li><a href="kegiatan.html" class="nav-link">Kegiatan</a></li>
+      <li><a href="galeri.html" class="nav-link active">Galeri</a></li>
+      <li><a href="daftar.html" class="nav-link nav-cta">Daftar Anggota</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg">
+    <svg viewBox="0 0 1440 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="0,400 250,120 500,260 750,70 1000,220 1250,90 1440,170 1440,400" fill="rgba(45,106,79,0.25)"/>
+    </svg>
+  </div>
+  <div class="container">
+    <div class="page-hero-content">
+      <span class="section-label">FOTO & VIDEO</span>
+      <h1>Galeri <em>Ekspedisi</em></h1>
+      <p>Setiap gambar menyimpan cerita perjuangan, keindahan, dan persaudaraan.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALERI FOTO -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">GALERI FOTO</span>
+      <h2 class="section-title">Momen <em>Berkesan</em></h2>
+    </div>
+
+    <!-- FILTER TABS -->
+    <div class="gallery-filter">
+      <button class="filter-btn active" data-filter="all">Semua</button>
+      <button class="filter-btn" data-filter="pendakian">Pendakian</button>
+      <button class="filter-btn" data-filter="konservasi">Konservasi</button>
+      <button class="filter-btn" data-filter="sosial">Sosial</button>
+      <button class="filter-btn" data-filter="diksar">Diksar</button>
+    </div>
+
+    <!-- PHOTO GRID -->
+    <div class="photo-grid" id="photoGrid">
+      <!-- Foto 1 -->
+      <div class="photo-item" data-category="pendakian">
+        <div class="photo-placeholder" style="background:linear-gradient(135deg,#1a3a2a,#2d6a4f)">
+          <div class="photo-art">
+            <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="100,10 180,140 20,140" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+              <circle cx="150" cy="35" r="12" fill="rgba(255,220,100,0.4)"/>
+              <rect x="0" y="110" width="200" height="40" fill="rgba(0,0,0,0.2)"/>
+            </svg>
+          </div>
+          <img src="assets/img/rinjani.jpg" alt="Puncak Rinjani" onerror="this.style.display='none'" loading="lazy"/>
+        </div>
+        <div class="photo-caption">
+          <h4>Puncak Rinjani 3.726 mdpl</h4>
+          <span>Maret 2024</span>
+        </div>
+      </div>
+      <!-- Foto 2 -->
+      <div class="photo-item photo-wide" data-category="pendakian">
+        <div class="photo-placeholder" style="background:linear-gradient(135deg,#0d2137,#1a4a6a)">
+          <div class="photo-art">
+            <svg viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="200,15 370,140 30,140" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+              <polygon points="90,40 230,140 -50,140" fill="rgba(255,255,255,0.06)"/>
+              <polygon points="310,50 450,140 170,140" fill="rgba(255,255,255,0.06)"/>
+            </svg>
+          </div>
+          <img src="assets/img/kumbolo.jpg" alt="Ranu Kumbolo" onerror="this.style.display='none'" loading="lazy"/>
+        </div>
+        <div class="photo-caption">
+          <h4>Danau Ranu Kumbolo, Semeru</h4>
+          <span>Januari 2024</span>
+        </div>
+      </div>
+      <!-- Foto 3 -->
+      <div class="photo-item" data-category="konservasi">
+        <div class="photo-placeholder" style="background:linear-gradient(135deg,#1a3d1a,#3a7a3a)">
+          <div class="photo-art">
+            <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="60" r="30" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+              <rect x="95" y="80" width="10" height="50" fill="rgba(255,255,255,0.15)"/>
+              <ellipse cx="70" cy="55" rx="20" ry="25" fill="rgba(255,255,255,0.07)"/>
+              <ellipse cx="130" cy="50" rx="25" ry="30" fill="rgba(255,255,255,0.07)"/>
+            </svg>
+          </div>
+          <img src="assets/img/1000 pohon.jpg" alt="Tanam Pohon" onerror="this.style.display='none'" loading="lazy"/>
+        </div>
+        <div class="photo-caption">
+          <h4>Program Tanam 1000 Pohon</h4>
+          <span>Desember 2023</span>
+        </div>
+      </div>
+      <!-- Foto 4 -->
+      <div class="photo-item" data-category="diksar">
+        <div class="photo-placeholder" style="background:linear-gradient(135deg,#3a2010,#6a4020)">
+          <div class="photo-art">
+            <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="60" r="8" fill="rgba(255,180,50,0.7)"/>
+              <line x1="100" y1="60" x2="80" y2="100" stroke="rgba(255,180,50,0.4)" stroke-width="2"/>
+              <line x1="100" y1="60" x2="120" y2="100" stroke="rgba(255,180,50,0.4)" stroke-width="2"/>
+              <ellipse cx="100" cy="120" rx="60" ry="10" fill="rgba(255,180,50,0.15)"/>
+            </svg>
+          </div>
+          <img src="assets/img/api unggun.jpg" alt="Api Unggun Diksar" onerror="this.style.display='none'" loading="lazy"/>
+        </div>
+        <div class="photo-caption">
+          <h4>Api Unggun Malam Diksar XIX</h4>
+          <span>Oktober 2023</span>
+        </div>
+      </div>
+      <!-- Foto 5 -->
+      <div class="photo-item photo-tall" data-category="pendakian">
+        <div class="photo-placeholder" style="background:linear-gradient(180deg,#1a1a3a,#3a3a6a)">
+          <div class="photo-art">
+            <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="100,20 190,280 10,280" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+              <circle cx="155" cy="45" r="20" fill="rgba(255,220,100,0.25)"/>
+              <line x1="0" y1="240" x2="200" y2="240" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+            </svg>
+          </div>
+          <img src="assets/img/sunrise.png" alt="Sunrise Semeru" onerror="this.style.display='none'" loading="lazy"/>
+        </div>
+        <div class="photo-caption">
+          <h4>Sunrise dari Arcopodo, Semeru</h4>
+          <span>Januari 2024</span>
+        </div>
+      </div>
+      <!-- Foto 6 -->
+      <div class="photo-item" data-category="sosial">
+        <div class="photo-placeholder" style="background:linear-gradient(135deg,#1a1a4a,#2a4a7a)">
+          <div class="photo-art">
+            <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="70" cy="60" r="20" fill="rgba(255,255,255,0.1)"/>
+              <circle cx="130" cy="60" r="20" fill="rgba(255,255,255,0.1)"/>
+              <circle cx="100" cy="50" r="20" fill="rgba(255,255,255,0.12)"/>
+              <rect x="30" y="90" width="140" height="40" rx="5" fill="rgba(255,255,255,0.06)"/>
+            </svg>
+          </div>
+          <img src="assets/img/desa lereng.png" alt="Bakti Sosial" onerror="this.style.display='none'" loading="lazy"/>
+        </div>
+        <div class="photo-caption">
+          <h4>Bakti Sosial Desa Lereng Merbabu</h4>
+          <span>September 2023</span>
+        </div>
+      </div>
+      <!-- Foto 7 -->
+      <div class="photo-item" data-category="konservasi">
+        <div class="photo-placeholder" style="background:linear-gradient(135deg,#0a3a0a,#1a6a2a)">
+          <div class="photo-art">
+            <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30,140 Q50,60 100,30 Q150,60 170,140" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+              <path d="M60,140 Q75,80 100,50 Q125,80 140,140" fill="rgba(255,255,255,0.05)"/>
+            </svg>
+          </div>
+          <img src="assets/img/patroli.png" alt="Patroli Jalur" onerror="this.style.display='none'" loading="lazy"/>
+        </div>
+        <div class="photo-caption">
+          <h4>Patroli Kebersihan Jalur Gunung</h4>
+          <span>Agustus 2023</span>
+        </div>
+      </div>
+      <!-- Foto 8 -->
+      <div class="photo-item" data-category="diksar">
+        <div class="photo-placeholder" style="background:linear-gradient(135deg,#3a1a0a,#7a4a2a)">
+          <div class="photo-art">
+            <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="60,140 100,30 140,140" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+              <polygon points="40,140 70,60 100,140" fill="rgba(255,255,255,0.06)"/>
+              <polygon points="100,140 130,60 160,140" fill="rgba(255,255,255,0.06)"/>
+            </svg>
+          </div>
+          <img src="assets/img/diksar.jpg" alt="Rapelling Diksar" onerror="this.style.display='none'" loading="lazy"/>
+        </div>
+        <div class="photo-caption">
+          <h4>Latihan Rapelling Diksar XIX</h4>
+          <span>Oktober 2023</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose">✕</button>
+      <button class="lightbox-prev" id="lightboxPrev">‹</button>
+      <button class="lightbox-next" id="lightboxNext">›</button>
+      <div class="lightbox-content" id="lightboxContent"></div>
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERI VIDEO -->
+<section class="video-section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">GALERI VIDEO</span>
+      <h2 class="section-title">Rekaman <em>Perjalanan</em></h2>
+    </div>
+
+    <div class="video-grid">
+      <!-- Video 1 -->
+      <div class="video-card">
+        <div class="video-wrapper">
+          <video controls poster="" class="gallery-video" preload="metadata">
+            <source src="assets/video/rinjani.mp4" type="video/mp4">
+            Browser Anda tidak mendukung video HTML5.
+          </video>
+          <div class="video-placeholder-overlay">
+            <svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" class="video-bg-art">
+              <rect width="600" height="340" fill="#0d2010"/>
+              <polygon points="300,40 540,300 60,300" fill="rgba(45,106,79,0.4)" stroke="rgba(100,200,130,0.3)" stroke-width="1"/>
+              <polygon points="180,80 380,300 -20,300" fill="rgba(30,80,50,0.3)"/>
+              <polygon points="420,60 620,300 220,300" fill="rgba(30,80,50,0.3)"/>
+              <circle cx="460" cy="70" r="35" fill="rgba(255,220,80,0.2)"/>
+              <text x="300" y="200" text-anchor="middle" font-family="serif" font-size="18" fill="rgba(255,255,255,0.5)">▶ Putar Video</text>
+              <text x="300" y="225" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.3)">ekspedisi-rinjani.mp4</text>
+            </svg>
+          </div>
+        </div>
+        <div class="video-info">
+          <div class="video-badge">🎬 Film Dokumenter</div>
+          <h3>Ekspedisi Puncak Rinjani 2024</h3>
+          <p>Dokumentasi lengkap perjalanan tim MAPALA menaklukkan Gunung Rinjani, dari basecamp hingga puncak 3.726 mdpl.</p>
+          <div class="video-meta">
+            <span>⏱️ 0:42</span>
+            <span>📅 Maret 2024</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="video-card">
+        <div class="video-wrapper">
+          <video controls poster="" class="gallery-video" preload="metadata">
+            <source src="assets/video/1000 pohon.mp4" type="video/mp4">
+            Browser Anda tidak mendukung video HTML5.
+          </video>
+          <div class="video-placeholder-overlay">
+            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" class="video-bg-art">
+              <rect width="300" height="200" fill="#0d1f0d"/>
+              <ellipse cx="150" cy="80" rx="60" ry="70" fill="rgba(45,140,60,0.3)"/>
+              <rect x="140" y="120" width="20" height="60" fill="rgba(45,140,60,0.25)"/>
+              <text x="150" y="170" text-anchor="middle" font-family="serif" font-size="14" fill="rgba(255,255,255,0.4)">▶ Putar</text>
+            </svg>
+          </div>
+        </div>
+        <div class="video-info">
+          <div class="video-badge">🌿 Konservasi</div>
+          <h3>Tanam Pohon 2023</h3>
+          <p>Program "Tanam 1000 Pohon" di area kritis DAS Ciliwung bersama BKSDA.</p>
+          <div class="video-meta">
+            <span>⏱️ 0:15</span>
+            <span>📅 Des 2023</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="video-card">
+        <div class="video-wrapper">
+          <video controls poster="" class="gallery-video" preload="metadata">
+            <source src="assets/video/diksar.mp4" type="video/mp4">
+            Browser Anda tidak mendukung video HTML5.
+          </video>
+          <div class="video-placeholder-overlay">
+            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" class="video-bg-art">
+              <rect width="300" height="200" fill="#1a0d05"/>
+              <circle cx="150" cy="80" r="15" fill="rgba(255,150,30,0.6)"/>
+              <polygon points="130,60 170,60 190,100 150,130 110,100" fill="rgba(255,100,10,0.2)"/>
+              <text x="150" y="165" text-anchor="middle" font-family="serif" font-size="14" fill="rgba(255,255,255,0.4)">▶ Putar</text>
+            </svg>
+          </div>
+        </div>
+        <div class="video-info">
+          <div class="video-badge">🔥 Diksar</div>
+          <h3>Highlights Diksar XIX</h3>
+          <p>Momen-momen berkesan dari Pendidikan Dasar MAPALA Angkatan XIX.</p>
+          <div class="video-meta">
+            <span>⏱️ 0:06</span>
+            <span>📅 Okt 2023</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 4 -->
+      <div class="video-card">
+        <div class="video-wrapper">
+          <video controls poster="" class="gallery-video" preload="metadata">
+            <source src="assets/video/semeru.mp4" type="video/mp4">
+            Browser Anda tidak mendukung video HTML5.
+          </video>
+          <div class="video-placeholder-overlay">
+            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" class="video-bg-art">
+              <rect width="300" height="200" fill="#05051a"/>
+              <polygon points="150,20 270,180 30,180" fill="rgba(60,80,180,0.25)" stroke="rgba(100,120,220,0.3)" stroke-width="1"/>
+              <circle cx="220" cy="45" r="25" fill="rgba(255,200,80,0.2)"/>
+              <text x="150" y="165" text-anchor="middle" font-family="serif" font-size="14" fill="rgba(255,255,255,0.4)">▶ Putar</text>
+            </svg>
+          </div>
+        </div>
+        <div class="video-info">
+          <div class="video-badge">⛰️ Ekspedisi</div>
+          <h3>Semeru – Mahameru Summit</h3>
+          <p>Perjalanan menuju Puncak Mahameru, titik tertinggi Pulau Jawa.</p>
+          <div class="video-meta">
+            <span>⏱️ 0:07</span>
+            <span>📅 Jan 2024</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="assets/logo.svg" alt="Logo" class="logo-img-sm" />
+          <span>MAPALA RIMBA NUSANTARA</span>
+        </div>
+        <p>Mahasiswa Pecinta Alam yang berkomitmen menjaga alam Indonesia untuk generasi mendatang.</p>
+      </div>
+      <div class="footer-nav">
+        <h5>Navigasi</h5>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+          <li><a href="kegiatan.html">Kegiatan</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="daftar.html">Daftar Anggota</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h5>Kontak</h5>
+        <p>📍 Sekretariat Gedung UKM Lt. 3</p>
+        <p>📧 mapala.rimbanusantara@email.com</p>
+        <p>📱 +62 812-3456-7890</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 MAPALA RIMBA NUSANTARA. Semua hak dilindungi.</p>
+      <p class="footer-motto">"Alam Bukan Warisan Nenek Moyang, Melainkan Titipan Anak Cucu"</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/galeri.js"></script>
+</body>
+</html>
